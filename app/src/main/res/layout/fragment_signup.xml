@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/untitled_project9"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <EditText
+            android:id="@+id/etEmail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="148dp"
+            android:layout_marginEnd="101dp"
+            android:backgroundTint="#B03A1F16"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etConfirmPassSIgnUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#B03A1F16"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPassSignUp" />
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="268dp"
+            android:backgroundTint="#7C4A2B22"
+            android:text="Log in"
+            app:layout_constraintBottom_toTopOf="@+id/signUoToLogInTxt"
+            app:layout_constraintEnd_toEndOf="@+id/etConfirmPassSIgnUp"
+            app:layout_constraintHorizontal_bias="0.442"
+            app:layout_constraintStart_toStartOf="@+id/etConfirmPassSIgnUp" />
+
+        <TextView
+            android:id="@+id/signUoToLogInTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I already have an account"
+            android:textColor="#7C4A2B22"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="673dp" />
+
+        <EditText
+            android:id="@+id/etPassSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="100dp"
+            android:backgroundTint="#B03A1F16"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEmail2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
